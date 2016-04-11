@@ -5,7 +5,7 @@ var http = require('http');
 //console.log(http.STATUS_CODES);
 
 //Constante da porta
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 function pedido(request, response){
 	response.end("Funcionou: "+request.url);
